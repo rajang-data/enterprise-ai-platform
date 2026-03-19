@@ -16,9 +16,11 @@ It exists because the architecture is more convincing running than described.
 ---
 
 
-## → [View Live Demo](https://enterprise-ai-platform.streamlit.app/)
+## Live Demo
 
-Click. No setup required.
+**[→ Open in Browser](https://enterprise-ai-platform.streamlit.app/)**
+
+Hosted on Streamlit Cloud. No login. No setup. No install.
 
 
 ---
