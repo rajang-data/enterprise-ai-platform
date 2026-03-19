@@ -1,6 +1,6 @@
 # Enterprise AI Governance Platform
 
-*Next Best Action Agent · Claude API · Built From Scratch*
+Next Best Action Agent · Claude API · Built From Scratch
 
 *Ra Jang | P&L Operator · Strategy Consultant · AI Builder*
 
@@ -14,17 +14,9 @@ It exists because the architecture is more convincing running than described.
 
 ---
 
-## Run It In 30 Seconds
-```bash
-git clone https://github.com/rajang-data/enterprise-ai-platform
-cd enterprise-ai-platform
-pip install -r requirements.txt
-cp .env.example .env
-# Add your Anthropic API key to .env
-streamlit run app.py
-```
+## → [View Live Demo](https://enterprise-ai-platform.streamlit.app/)
 
-No AgentForce. No LangChain. No CrewAI. Just Claude API and Python.
+Click. No setup required.
 
 ---
 
@@ -67,6 +59,18 @@ Every decision logged: timestamp, model, confidence, reasoning, policy outcome.
 **Human-in-the-loop by policy.** Not by accident. Not by low confidence alone. By explicit rule. The system decides what it can decide. It escalates what it cannot.
 
 **Structured JSON throughout.** Every agent interface is typed and parsed. Enterprise systems require deterministic inputs. This is built for integration, not demonstration.
+
+---
+
+## Run Locally
+````bash
+git clone https://github.com/rajang-data/enterprise-ai-platform
+cd enterprise-ai-platform
+pip install -r requirements.txt
+cp .env.example .env
+# Add your Anthropic API key to .env
+streamlit run app.py
+```
 
 ---
 
