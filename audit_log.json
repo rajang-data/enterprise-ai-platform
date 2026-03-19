@@ -1,0 +1,222 @@
+[
+  {
+    "timestamp": "2026-03-19T12:32:38.972011",
+    "account_id": "ENT-001",
+    "company": "Hartwell Industries",
+    "model": "claude-sonnet-4-6",
+    "action_recommended": "schedule_executive_meeting",
+    "confidence": 0.87,
+    "reason": "High expansion signals detected",
+    "policy_check": "passed",
+    "human_review_required": false
+  },
+  {
+    "timestamp": "2026-03-19T12:43:38.402881",
+    "account_id": "ENT-004",
+    "company": "Crane & Voss",
+    "model": "claude-sonnet-4-6",
+    "action_recommended": "flag_churn_risk",
+    "confidence": 0.95,
+    "reason": "Crane & Voss exhibits four compounding churn signals that demand immediate internal escalation before any outreach occurs: the internal champion has departed, usage has fallen 35%, no contact has been made in 6 months, and a competitor pricing inquiry has been detected \u2014 all with only 120 days left on a $340K contract. The team must first identify a new internal stakeholder and align on a retention strategy before engaging the account. Losing this account without a coordinated response would represent a significant and likely preventable revenue loss.",
+    "policy_check": "passed",
+    "human_review_required": true
+  },
+  {
+    "timestamp": "2026-03-19T12:44:54.553196",
+    "account_id": "ENT-001",
+    "company": "Hartwell Industries",
+    "model": "claude-sonnet-4-6",
+    "action_recommended": "immediate_outreach",
+    "confidence": 0.91,
+    "reason": "A competitor demo is scheduled for next week, making this a time-critical situation that cannot wait for a nurture sequence or scheduled meeting. The 45-day contact gap combined with a low engagement score of 34/100 means the account has gone cold precisely when a rival is moving in. However, the strong expansion signals \u2014 3 new plants, approved AI budget, and a champion now elevated to VP \u2014 mean this account has high retention and growth potential worth fighting for today.",
+    "policy_check": "passed",
+    "human_review_required": false
+  },
+  {
+    "timestamp": "2026-03-19T12:45:04.228246",
+    "account_id": "ENT-002",
+    "company": "Vantage Communications",
+    "model": "claude-sonnet-4-6",
+    "action_recommended": "schedule_executive_meeting",
+    "confidence": 0.87,
+    "reason": "Vantage Communications shows strong expansion potential with a newly approved contact center AI initiative, an incoming AI-focused CTO, and an active Q1 budget cycle \u2014 creating a prime window for a strategic conversation. Engaging at the executive level now allows us to align with the new CTO's vision early and position our solution as a core part of their AI roadmap before budget is allocated elsewhere. With no churn risk signals and a healthy engagement score of 78, this is the right moment to go senior and expand the relationship.",
+    "policy_check": "passed",
+    "human_review_required": false
+  },
+  {
+    "timestamp": "2026-03-19T12:45:13.226295",
+    "account_id": "ENT-003",
+    "company": "Nexus Analytics",
+    "model": "claude-sonnet-4-6",
+    "action_recommended": "send_expansion_proposal",
+    "confidence": 0.91,
+    "reason": "Nexus Analytics is showing strong upsell readiness with 40% usage growth and a direct request for enterprise tier pricing, making this an ideal moment to deliver a tailored expansion proposal. The 90-day contract window creates a natural, timely hook to bundle renewal with an upgrade conversation. With no churn risk signals and a high engagement score of 82/100, the account is primed to expand rather than simply renew at the current ARR.",
+    "policy_check": "passed",
+    "human_review_required": false
+  },
+  {
+    "timestamp": "2026-03-19T12:45:21.847101",
+    "account_id": "ENT-004",
+    "company": "Crane & Voss",
+    "model": "claude-sonnet-4-6",
+    "action_recommended": "flag_churn_risk",
+    "confidence": 0.96,
+    "reason": "Crane & Voss exhibits multiple severe churn indicators simultaneously: the internal champion has departed, leaving the account without an advocate, while a competitor pricing inquiry signals active evaluation of alternatives. With 120 days until contract renewal, a 35% usage drop, and zero contact in 6 months, this $340K ARR account requires immediate escalation to prevent loss.",
+    "policy_check": "passed",
+    "human_review_required": true
+  },
+  {
+    "timestamp": "2026-03-19T12:45:30.501936",
+    "account_id": "ENT-005",
+    "company": "Hearthstone Health",
+    "model": "claude-sonnet-4-6",
+    "action_recommended": "schedule_executive_meeting",
+    "confidence": 0.82,
+    "reason": "Hearthstone Health presents a strong expansion opportunity with an approved AI transformation budget and 3 new hospital locations opening, making them ripe for an upsell conversation. However, the implementation being behind schedule is a meaningful risk signal that must be addressed at a senior level before any expansion proposal is sent \u2014 resolving this first protects the base ARR of $510K and builds trust for growth. With an engaged executive sponsor and 210 days until contract renewal, a timely executive meeting can align on implementation recovery while positioning expansion organically.",
+    "policy_check": "passed",
+    "human_review_required": false
+  },
+  {
+    "timestamp": "2026-03-19T12:45:39.054346",
+    "account_id": "ENT-006",
+    "company": "Meridian Wireless",
+    "model": "claude-sonnet-4-6",
+    "action_recommended": "flag_churn_risk",
+    "confidence": 0.87,
+    "reason": "Meridian Wireless exhibits multiple compounding churn indicators: 95 days of no meaningful contact, critically low engagement score of 38/100, and three consecutive unanswered outreach attempts. Combined with an announced budget freeze and the loss of a key stakeholder, renewal is seriously threatened with only 150 days until contract end.",
+    "policy_check": "passed",
+    "human_review_required": true
+  },
+  {
+    "timestamp": "2026-03-19T12:57:14.459118",
+    "account_id": "ENT-001",
+    "company": "Hartwell Industries",
+    "model": "claude-sonnet-4-6",
+    "action_recommended": "immediate_outreach",
+    "confidence": 0.91,
+    "reason": "A competitor demo is scheduled for next week, creating an urgent threat to a $285,000 ARR account that simultaneously shows strong expansion potential with 3 new plants opening and a newly promoted VP champion. With 45 days of silence and a competitor actively engaging, waiting risks losing both the renewal and expansion opportunity before the contract ends in 180 days. Reaching out today to congratulate the champion on their VP promotion and align on the Q3 plant expansion needs can re-anchor the relationship before the competitor gains ground.",
+    "policy_check": "passed",
+    "human_review_required": false
+  },
+  {
+    "timestamp": "2026-03-19T12:57:23.736546",
+    "account_id": "ENT-002",
+    "company": "Vantage Communications",
+    "model": "claude-sonnet-4-6",
+    "action_recommended": "schedule_executive_meeting",
+    "confidence": 0.88,
+    "reason": "Vantage Communications is in an active growth stage with a newly hired AI-background CTO and an approved contact center AI initiative, creating a high-value window for strategic executive alignment. With Q1 budget cycle starting, now is the optimal moment to engage at the senior level to position an expansion conversation before budget commitments are finalized. No churn risk signals and a strong engagement score of 78/100 support investing in a high-touch, executive-level approach.",
+    "policy_check": "passed",
+    "human_review_required": false
+  },
+  {
+    "timestamp": "2026-03-19T12:57:32.896372",
+    "account_id": "ENT-003",
+    "company": "Nexus Analytics",
+    "model": "claude-sonnet-4-6",
+    "action_recommended": "send_expansion_proposal",
+    "confidence": 0.91,
+    "reason": "Nexus Analytics is showing strong, multi-dimensional buying signals with 40% usage growth and a direct request for enterprise tier pricing, indicating clear expansion intent. The 90-day contract window creates a natural and timely opportunity to combine renewal with an upsell into a single proposal, maximizing deal value. With no churn risk signals and a high engagement score of 82/100, the account is primed to receive a formal expansion offer now.",
+    "policy_check": "passed",
+    "human_review_required": false
+  },
+  {
+    "timestamp": "2026-03-19T12:57:41.462993",
+    "account_id": "ENT-004",
+    "company": "Crane & Voss",
+    "model": "claude-sonnet-4-6",
+    "action_recommended": "flag_churn_risk",
+    "confidence": 0.96,
+    "reason": "Crane & Voss exhibits multiple severe churn indicators simultaneously: their internal champion has departed, leaving no internal advocate, while a competitor pricing inquiry signals active evaluation of alternatives. Combined with a 35% usage drop, 180 days of no contact, and a contract renewal window of only 120 days, this $340K ARR account requires immediate escalation before it is lost.",
+    "policy_check": "passed",
+    "human_review_required": true
+  },
+  {
+    "timestamp": "2026-03-19T12:57:50.781725",
+    "account_id": "ENT-005",
+    "company": "Hearthstone Health",
+    "model": "claude-sonnet-4-6",
+    "action_recommended": "schedule_executive_meeting",
+    "confidence": 0.82,
+    "reason": "Hearthstone Health presents a strong expansion opportunity with an approved AI transformation budget and 3 new hospital locations opening, making them prime candidates for an upsell conversation. However, the implementation being behind schedule is a meaningful risk signal that requires executive-level alignment to resolve before any expansion proposal is sent \u2014 a senior meeting addresses both the relationship health and the growth opportunity simultaneously. With 210 days left on contract and an engaged executive sponsor, now is the right window to get ahead of both the risk and the opportunity.",
+    "policy_check": "passed",
+    "human_review_required": false
+  },
+  {
+    "timestamp": "2026-03-19T12:58:00.082882",
+    "account_id": "ENT-006",
+    "company": "Meridian Wireless",
+    "model": "claude-sonnet-4-6",
+    "action_recommended": "flag_churn_risk",
+    "confidence": 0.87,
+    "reason": "Meridian Wireless exhibits multiple compounding churn indicators: 95 days of no meaningful contact, an engagement score of only 38/100, and no response to the last 3 outreach attempts \u2014 all with a contract renewal just 150 days away. The announced budget freeze combined with the key stakeholder being on leave creates a dangerous vacuum where renewal decisions could stall or default to cancellation. While the Q2 product launch is a potential expansion signal, it cannot be acted upon until churn risk is stabilized and an active champion is re-established.",
+    "policy_check": "passed",
+    "human_review_required": true
+  },
+  {
+    "timestamp": "2026-03-19T13:00:33.302428",
+    "account_id": "ENT-001",
+    "company": "Hartwell Industries",
+    "model": "claude-sonnet-4-6",
+    "action_recommended": "immediate_outreach",
+    "confidence": 0.91,
+    "reason": "A competitor demo is scheduled for next week, making this a time-critical situation that requires same-day intervention. Despite strong expansion signals \u2014 including 3 new plants, an approved AI budget, and a champion promotion \u2014 the 45-day contact gap and low engagement score of 34/100 have created an opening for the competition. Immediate outreach to the newly promoted VP of Operations can re-anchor the relationship and position an expansion conversation before the competitor gains momentum.",
+    "policy_check": "passed",
+    "human_review_required": false
+  },
+  {
+    "timestamp": "2026-03-19T13:00:42.130954",
+    "account_id": "ENT-002",
+    "company": "Vantage Communications",
+    "model": "claude-sonnet-4-6",
+    "action_recommended": "schedule_executive_meeting",
+    "confidence": 0.88,
+    "reason": "Vantage Communications is showing strong expansion potential with a newly approved contact center AI initiative and a CTO hired from an AI background \u2014 a rare alignment of budget, mandate, and executive sponsorship. With Q1 budget cycle starting now, securing an executive-level meeting to present AI-aligned solutions is time-sensitive and strategically critical. There are no churn risks and an engagement score of 78 confirms the relationship is healthy and receptive.",
+    "policy_check": "passed",
+    "human_review_required": false
+  },
+  {
+    "timestamp": "2026-03-19T13:00:50.403440",
+    "account_id": "ENT-003",
+    "company": "Nexus Analytics",
+    "model": "claude-sonnet-4-6",
+    "action_recommended": "send_expansion_proposal",
+    "confidence": 0.91,
+    "reason": "Nexus Analytics is displaying strong, compounding upsell signals: a 40% usage surge last quarter combined with a direct request for enterprise tier pricing indicates self-identified readiness to expand. With the contract renewing in 90 days, sending a tailored expansion proposal now capitalizes on their momentum and creates a natural anchor for renewal negotiations before competing priorities emerge.",
+    "policy_check": "passed",
+    "human_review_required": false
+  },
+  {
+    "timestamp": "2026-03-19T13:00:58.533245",
+    "account_id": "ENT-004",
+    "company": "Crane & Voss",
+    "model": "claude-sonnet-4-6",
+    "action_recommended": "flag_churn_risk",
+    "confidence": 0.95,
+    "reason": "Crane & Voss is exhibiting multiple critical churn indicators simultaneously: their internal champion has departed, usage has dropped 35%, and a competitor pricing inquiry has been detected \u2014 all with 120 days until contract renewal. With no contact in 6 months and an engagement score of just 21/100, this $340K ARR account requires immediate escalation to the retention team before a competitor closes the gap.",
+    "policy_check": "passed",
+    "human_review_required": true
+  },
+  {
+    "timestamp": "2026-03-19T13:01:08.609702",
+    "account_id": "ENT-005",
+    "company": "Hearthstone Health",
+    "model": "claude-sonnet-4-6",
+    "action_recommended": "schedule_executive_meeting",
+    "confidence": 0.82,
+    "reason": "Hearthstone Health presents a strong expansion opportunity with an approved AI transformation budget and 3 new hospital locations opening, making them clearly expansion-eligible. However, the implementation delay is a compounding risk that must be addressed at the executive level before any proposal is sent \u2014 the engaged executive sponsor provides an ideal entry point to align on both the implementation path and expansion roadmap simultaneously. At 22 days since last contact with a mid-tier engagement score of 61, re-engaging at a senior level now (with 210 days to renewal) is the right balance between urgency and strategic positioning.",
+    "policy_check": "passed",
+    "human_review_required": false
+  },
+  {
+    "timestamp": "2026-03-19T13:01:16.696991",
+    "account_id": "ENT-006",
+    "company": "Meridian Wireless",
+    "model": "claude-sonnet-4-6",
+    "action_recommended": "flag_churn_risk",
+    "confidence": 0.87,
+    "reason": "Meridian Wireless exhibits multiple compounding churn indicators: 95 days of silence with no response to three outreach attempts, a critically low engagement score of 38/100, and a contract expiring in 150 days \u2014 leaving a narrow window to act. The announced budget freeze combined with a key stakeholder absence severely limits near-term expansion opportunities and makes upsell motions premature.",
+    "policy_check": "passed",
+    "human_review_required": true
+  }
+]
