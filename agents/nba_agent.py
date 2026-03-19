@@ -3,12 +3,6 @@ from utils.claude_client import call_claude
 from utils.prompts import NBA_AGENT_PROMPT
 
 def run_nba_agent(account):
-    """
-    Analyzes account data and recommends next best action.
-    Returns structured JSON recommendation.
-    """
-
-    # Build context from account data
     user_message = f"""
 Analyze this enterprise account and recommend the best next action:
 
@@ -28,14 +22,11 @@ Risk Signals:
 Stage: {account['stage']}
 """
 
-    # Call Claude
     response = call_claude(NBA_AGENT_PROMPT, user_message)
 
-    # Parse JSON response
     try:
         recommendation = json.loads(response)
     except json.JSONDecodeError:
-        # Extract JSON if wrapped in text
         start = response.find('{')
         end = response.rfind('}') + 1
         recommendation = json.loads(response[start:end])

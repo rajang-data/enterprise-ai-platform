@@ -4,9 +4,6 @@ from data.accounts import get_all_accounts
 from agents.supervisor import run_analysis, run_portfolio_analysis
 from governance.audit_logger import get_logs
 
-# ─────────────────────────────────────
-# PAGE CONFIG
-# ─────────────────────────────────────
 st.set_page_config(
     page_title="Enterprise AI Platform",
     page_icon="⚡",
@@ -14,18 +11,9 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# ─────────────────────────────────────
-# STYLING
-# ─────────────────────────────────────
 st.markdown("""
 <style>
-    /* Dark background */
-    .stApp {
-        background-color: #0A0F1E;
-        color: #F9FAFB;
-    }
-
-    /* Main header */
+    .stApp { background-color: #0A0F1E; color: #F9FAFB; }
     .main-header {
         background: linear-gradient(135deg, #0A0F1E 0%, #1a2744 100%);
         border: 1px solid #3B82F6;
@@ -34,158 +22,36 @@ st.markdown("""
         margin-bottom: 24px;
         text-align: center;
     }
-
-    .main-title {
-        font-size: 2.4rem;
-        font-weight: 700;
-        color: #F9FAFB;
-        margin: 0;
-        letter-spacing: -0.5px;
-    }
-
-    .main-subtitle {
-        font-size: 1rem;
-        color: #3B82F6;
-        margin: 8px 0 4px 0;
-        font-weight: 500;
-    }
-
-    .main-tagline {
-        font-size: 0.85rem;
-        color: #6B7280;
-        margin: 0;
-    }
-
-    /* Account cards */
+    .main-title { font-size: 2.4rem; font-weight: 700; color: #F9FAFB; margin: 0; }
+    .main-subtitle { font-size: 1rem; color: #3B82F6; margin: 8px 0 4px 0; font-weight: 500; }
+    .main-tagline { font-size: 0.85rem; color: #6B7280; margin: 0; }
     .account-card {
         background: #111827;
         border: 1px solid #1F2937;
         border-radius: 10px;
         padding: 20px;
         margin-bottom: 12px;
-        transition: border-color 0.2s;
     }
-
-    .account-card:hover {
-        border-color: #3B82F6;
-    }
-
-    .account-name {
-        font-size: 1rem;
-        font-weight: 600;
-        color: #F9FAFB;
-        margin: 0 0 4px 0;
-    }
-
-    .account-meta {
-        font-size: 0.8rem;
-        color: #6B7280;
-        margin: 0;
-    }
-
-    /* Status badges */
-    .badge-auto {
-        background: #065F46;
-        color: #10B981;
-        padding: 2px 10px;
-        border-radius: 20px;
-        font-size: 0.75rem;
-        font-weight: 600;
-    }
-
-    .badge-human {
-        background: #78350F;
-        color: #F59E0B;
-        padding: 2px 10px;
-        border-radius: 20px;
-        font-size: 0.75rem;
-        font-weight: 600;
-    }
-
-    /* Platform status */
-    .platform-card {
-        background: #111827;
-        border: 1px solid #1F2937;
-        border-radius: 10px;
-        padding: 20px;
-    }
-
-    .platform-item {
-        display: flex;
-        align-items: center;
-        padding: 8px 0;
-        border-bottom: 1px solid #1F2937;
-        font-size: 0.85rem;
-        color: #D1D5DB;
-    }
-
-    /* Recommendation detail */
-    .rec-card {
-        background: #111827;
-        border: 1px solid #3B82F6;
-        border-radius: 10px;
-        padding: 24px;
-    }
-
-    .rec-action {
-        font-size: 1.4rem;
-        font-weight: 700;
-        color: #3B82F6;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
-
-    .signal-item {
-        background: #1F2937;
-        border-radius: 6px;
-        padding: 8px 12px;
-        margin: 4px 0;
-        font-size: 0.85rem;
-        color: #D1D5DB;
-    }
-
-    /* Audit log */
-    .log-item {
-        background: #111827;
-        border: 1px solid #1F2937;
-        border-radius: 8px;
-        padding: 12px 16px;
-        margin-bottom: 8px;
-        font-size: 0.8rem;
-        color: #9CA3AF;
-        font-family: monospace;
-    }
-
-    /* Hide streamlit default elements */
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    header {visibility: hidden;}
-
-    /* Section headers */
-    .section-header {
-        font-size: 0.75rem;
-        font-weight: 600;
-        color: #6B7280;
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
-        margin-bottom: 12px;
-    }
+    .account-name { font-size: 1rem; font-weight: 600; color: #F9FAFB; margin: 0 0 4px 0; }
+    .account-meta { font-size: 0.8rem; color: #6B7280; margin: 0; }
+    .badge-auto { background: #065F46; color: #10B981; padding: 2px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; }
+    .badge-human { background: #78350F; color: #F59E0B; padding: 2px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; }
+    .platform-card { background: #111827; border: 1px solid #1F2937; border-radius: 10px; padding: 20px; }
+    .platform-item { display: flex; align-items: center; padding: 8px 0; border-bottom: 1px solid #1F2937; font-size: 0.85rem; color: #D1D5DB; }
+    .rec-card { background: #111827; border: 1px solid #3B82F6; border-radius: 10px; padding: 24px; }
+    .rec-action { font-size: 1.4rem; font-weight: 700; color: #3B82F6; text-transform: uppercase; letter-spacing: 1px; }
+    .signal-item { background: #1F2937; border-radius: 6px; padding: 8px 12px; margin: 4px 0; font-size: 0.85rem; color: #D1D5DB; }
+    .log-item { background: #111827; border: 1px solid #1F2937; border-radius: 8px; padding: 12px 16px; margin-bottom: 8px; font-size: 0.8rem; color: #9CA3AF; font-family: monospace; }
+    #MainMenu {visibility: hidden;} footer {visibility: hidden;} header {visibility: hidden;}
+    .section-header { font-size: 0.75rem; font-weight: 600; color: #6B7280; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 12px; }
 </style>
 """, unsafe_allow_html=True)
 
-# ─────────────────────────────────────
-# SESSION STATE
-# ─────────────────────────────────────
 if 'results' not in st.session_state:
     st.session_state.results = None
 if 'selected' not in st.session_state:
     st.session_state.selected = None
-if 'running' not in st.session_state:
-    st.session_state.running = False
 
-# ─────────────────────────────────────
-# HEADER
-# ─────────────────────────────────────
 st.markdown("""
 <div class="main-header">
     <p class="main-title">⚡ Enterprise AI Platform</p>
@@ -194,14 +60,9 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# ─────────────────────────────────────
-# MAIN LAYOUT
-# ─────────────────────────────────────
 col_left, col_right = st.columns([1.2, 1.8])
 
 with col_left:
-
-    # Platform Status
     st.markdown('<p class="section-header">Platform Status</p>', unsafe_allow_html=True)
     st.markdown("""
     <div class="platform-card">
@@ -213,8 +74,6 @@ with col_left:
     """, unsafe_allow_html=True)
 
     st.markdown("<br>", unsafe_allow_html=True)
-
-    # Run Button
     st.markdown('<p class="section-header">Account Portfolio</p>', unsafe_allow_html=True)
 
     if st.button("▶ Run Portfolio Analysis", use_container_width=True, type="primary"):
@@ -227,7 +86,6 @@ with col_left:
                 result = run_analysis(account)
                 st.session_state.results.append(result)
 
-    # Account List
     if st.session_state.results:
         for i, result in enumerate(st.session_state.results):
             rec = result['recommendation']
@@ -255,7 +113,6 @@ with col_left:
                 st.session_state.selected = i
 
 with col_right:
-
     if st.session_state.selected is not None and st.session_state.results:
         result = st.session_state.results[st.session_state.selected]
         rec = result['recommendation']
@@ -263,7 +120,6 @@ with col_right:
         guardrail = result['guardrail']
         evaluation = result['evaluation']
 
-        # Company Header
         st.markdown(f"""
         <div style="margin-bottom:20px">
             <h2 style="color:#F9FAFB;margin:0">{result['company']}</h2>
@@ -271,7 +127,6 @@ with col_right:
         </div>
         """, unsafe_allow_html=True)
 
-        # Recommendation
         st.markdown('<p class="section-header">Recommendation</p>', unsafe_allow_html=True)
         urgency_color = "#EF4444" if rec.get('urgency') == 'high' else "#F59E0B" if rec.get('urgency') == 'medium' else "#10B981"
 
@@ -289,15 +144,11 @@ with col_right:
         """, unsafe_allow_html=True)
 
         st.markdown("<br>", unsafe_allow_html=True)
-
-        # Key Signals
         st.markdown('<p class="section-header">Key Signals</p>', unsafe_allow_html=True)
         for signal in rec.get('key_signals', []):
             st.markdown(f'<div class="signal-item">◆ {signal}</div>', unsafe_allow_html=True)
 
         st.markdown("<br>", unsafe_allow_html=True)
-
-        # Platform Checks
         st.markdown('<p class="section-header">Platform Checks</p>', unsafe_allow_html=True)
         human = policy['human_review_required']
         safe = guardrail['safe']
@@ -333,8 +184,6 @@ with col_right:
             """, unsafe_allow_html=True)
 
         st.markdown("<br>", unsafe_allow_html=True)
-
-        # Policy Reason
         st.markdown(f"""
         <div style="background:#111827;border:1px solid #1F2937;border-radius:8px;padding:12px">
             <p style="margin:0;font-size:0.8rem;color:#6B7280">Policy decision: <span style="color:#D1D5DB">{policy['reason']}</span></p>
@@ -342,7 +191,6 @@ with col_right:
         """, unsafe_allow_html=True)
 
     else:
-        # Empty state
         st.markdown("""
         <div style="background:#111827;border:1px dashed #1F2937;border-radius:12px;padding:60px;text-align:center;margin-top:20px">
             <p style="font-size:2rem;margin:0">⚡</p>
@@ -352,9 +200,6 @@ with col_right:
         </div>
         """, unsafe_allow_html=True)
 
-# ─────────────────────────────────────
-# AUDIT LOG SECTION
-# ─────────────────────────────────────
 st.markdown("<br>", unsafe_allow_html=True)
 st.markdown('<p class="section-header">Audit Log — Every Decision Recorded</p>', unsafe_allow_html=True)
 

@@ -3,12 +3,6 @@ from utils.claude_client import call_claude
 from utils.prompts import EVALUATION_PROMPT
 
 def evaluate_recommendation(account, recommendation):
-    """
-    Evaluates NBA agent output quality.
-    If quality is low, flags for re-run.
-    Returns evaluation result.
-    """
-
     user_message = f"""
 Review this NBA recommendation:
 
