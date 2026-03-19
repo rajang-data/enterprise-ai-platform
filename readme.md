@@ -1,8 +1,9 @@
 # Enterprise AI Governance Platform
 
+*Ra Jang | P&L Operator · Strategy Consultant · AI Builder*
+
 Next Best Action Agent · Claude API · Built From Scratch
 
-*Ra Jang | P&L Operator · Strategy Consultant · AI Builder*
 
 ---
 
@@ -14,11 +15,14 @@ It exists because the architecture is more convincing running than described.
 
 ---
 
+
 ## → [View Live Demo](https://enterprise-ai-platform.streamlit.app/)
 
 Click. No setup required.
 
+
 ---
+
 
 ## The Problem
 
@@ -28,7 +32,9 @@ Legal needs an audit trail. Compliance needs policy enforcement. Security needs 
 
 AgentForce solves this inside Salesforce. **This solves it from scratch.**
 
+
 ---
+
 
 ## Two Layers. One System.
 
@@ -38,17 +44,21 @@ AgentForce solves this inside Salesforce. **This solves it from scratch.**
 
 The governance layer defines what AI can decide autonomously and what requires a human. The intelligence layer executes within those boundaries. This mirrors how enterprise AI operating models actually need to work.
 
+
 ---
+
 
 ## What Happens When You Run It
 
 Six enterprise accounts across Industrial Manufacturing, Telecom, B2B SaaS, and Healthcare. Each runs through the full pipeline in seconds.
 
-The agent analyzes account signals, generates a recommendation, routes it through the governance layer, and logs every decision. High-risk actions like churn flags automatically require human review. Everything else is auto-approved above confidence threshold.
+**The agent analyzes account signals, generates a recommendation, routes it through the governance layer, and logs every decision.** High-risk actions like churn flags automatically require human review. Everything else is auto-approved above confidence threshold.
 
 Every decision logged: timestamp, model, confidence, reasoning, policy outcome.
 
+
 ---
+
 
 ## Why It's Built This Way
 
@@ -60,19 +70,22 @@ Every decision logged: timestamp, model, confidence, reasoning, policy outcome.
 
 **Structured JSON throughout.** Every agent interface is typed and parsed. Enterprise systems require deterministic inputs. This is built for integration, not demonstration.
 
+
 ---
 
+
 ## Run Locally
-````bash
+
 git clone https://github.com/rajang-data/enterprise-ai-platform
 cd enterprise-ai-platform
 pip install -r requirements.txt
 cp .env.example .env
 # Add your Anthropic API key to .env
 streamlit run app.py
-```
+
 
 ---
+
 
 ## Stack
 
