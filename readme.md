@@ -21,6 +21,7 @@ It exists because the architecture is more convincing running than described.
 **[→ Open in Browser](https://enterprise-ai-platform.streamlit.app/)**
 
 Hosted on Streamlit Cloud. No login. No setup. No install.
+*https://enterprise-ai-platform.streamlit.app/*
 
 
 ---
