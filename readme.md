@@ -7,7 +7,7 @@
 
 Some things are easier to show than explain.
 
-This is a working implementation of enterprise AI governance: policy enforcement, audit logging, guardrails, and a Next Best Action agent built on Claude API without any third-party agent platforms.
+This is a working implementation of **enterprise AI governance: policy enforcement, audit logging, guardrails, and a Next Best Action agent** built on Claude API without any third-party agent platforms.
 
 It exists because the architecture is more convincing running than described.
 
