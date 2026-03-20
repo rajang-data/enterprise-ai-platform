@@ -1,5 +1,6 @@
 # Enterprise AI Governance Platform
 *Next Best Action Agent · Claude API · Built From Scratch*
+
 *Ra Jang | P&L Operator · Strategy Consultant · AI Builder*
 
 ---
