@@ -7,7 +7,7 @@
 
 Some things are easier to show than explain.
 
-This is a working implementation of enterprise AI governance — policy enforcement, audit logging, guardrails, and a Next Best Action agent — built on Claude API without any third-party agent platforms.
+This is a working implementation of enterprise AI governance: policy enforcement, audit logging, guardrails, and a Next Best Action agent built on Claude API without any third-party agent platforms.
 
 It exists because the architecture is more convincing running than described.
 
@@ -17,7 +17,8 @@ It exists because the architecture is more convincing running than described.
 
 **[→ Open in Browser](https://enterprise-ai-platform.streamlit.app/)**
 
-Hosted on Streamlit Cloud. No login. No setup. No install.
+Hosted on Streamlit Cloud.
+No login. No setup. No install.
 
 ---
 
@@ -25,7 +26,7 @@ Hosted on Streamlit Cloud. No login. No setup. No install.
 
 Enterprise teams don't fail at AI because they lack models. **They fail because they can't govern AI decisions at scale.**
 
-Legal needs an audit trail. Compliance needs policy enforcement. Security needs guardrails. And the business needs recommendations that reach decision-makers fast — without waiting months for platform procurement.
+Legal needs an audit trail. Compliance needs policy enforcement. Security needs guardrails. And the business needs recommendations that reach decision-makers fast without waiting months for platform procurement.
 
 AgentForce solves this inside Salesforce. **This solves it from scratch.**
 
@@ -49,6 +50,8 @@ Six enterprise accounts across Industrial Manufacturing, Telecom, B2B SaaS, and 
 
 Every decision logged: timestamp, model, confidence, reasoning, policy outcome.
 
+*Accounts are synthetic demo data representing realistic enterprise scenarios.*
+
 ---
 
 ## Why It's Built This Way
@@ -57,13 +60,13 @@ Every decision logged: timestamp, model, confidence, reasoning, policy outcome.
 Built directly on Claude API because enterprise clients don't always have Salesforce or AgentForce. This works on any CRM, any data source, from scratch.
 
 **Centralized governance. Decentralized execution.**
-The governance layer — policy, audit, guardrail — runs centrally. The NBA agent runs at the edge. This is the operating model enterprise AI actually needs, not just the model that's easiest to demo.
+The governance layer (policy, audit, guardrail) runs centrally. The NBA agent runs at the edge. This is the operating model enterprise AI actually needs, not just the model that's easiest to demo.
 
 **Human-in-the-loop by policy, not by accident.**
 Churn risk flags always route to human review. Low-confidence decisions route to human review. The system decides what it can decide. It escalates what it cannot.
 
 **Planning loop.**
-Confidence below 0.70 triggers a re-run. Minimal self-correction — but enough to matter at scale.
+Confidence below 0.70 triggers a re-run. Minimal self-correction but enough to matter at scale.
 
 **Constrained action space.**
 Five defined actions, not free text. Predictable outputs that integrate into downstream workflows.
