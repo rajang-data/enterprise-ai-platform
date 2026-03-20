@@ -34,10 +34,10 @@ AgentForce solves this inside Salesforce. **This solves it from scratch.**
 
 ## Two Layers. One System.
 
-**Governance Layer** (Centralized)**
+**Governance Layer** (Centralized)
 Policy Engine, Audit Logger, Guardrail
 
-**Intelligence Layer** (Edge)**
+**Intelligence Layer** (Edge)
 NBA Agent, Evaluation Agent, Supervisor
 
 The governance layer defines what AI can decide autonomously and what requires a human. The intelligence layer executes within those boundaries. 
