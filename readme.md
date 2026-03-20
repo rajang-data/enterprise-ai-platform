@@ -1,6 +1,5 @@
 # Enterprise AI Governance Platform
 *Next Best Action Agent · Claude API · Built From Scratch*
-
 *Ra Jang | P&L Operator · Strategy Consultant · AI Builder*
 
 ---
@@ -53,17 +52,28 @@ Every decision logged: timestamp, model, confidence, reasoning, policy outcome.
 
 ## Why It's Built This Way
 
-**Constrained action space.** The agent chooses from five defined actions. Predictable outputs that integrate into downstream workflows without surprises.
+**No third-party agent platforms.**
+Built directly on Claude API because enterprise clients don't always have Salesforce or AgentForce. This works on any CRM, any data source, from scratch.
 
-**Planning loop.** The evaluation agent reviews every recommendation. Low quality triggers a re-run. Minimal self-correction — but enough to matter at scale.
+**Centralized governance. Decentralized execution.**
+The governance layer — policy, audit, guardrail — runs centrally. The NBA agent runs at the edge. This is the operating model enterprise AI actually needs, not just the model that's easiest to demo.
 
-**Human-in-the-loop by policy.** Not by accident. Not by low confidence alone. By explicit rule. The system decides what it can decide. It escalates what it cannot.
+**Human-in-the-loop by policy, not by accident.**
+Churn risk flags always route to human review. Low-confidence decisions route to human review. The system decides what it can decide. It escalates what it cannot.
 
-**Structured JSON throughout.** Every agent interface is typed and parsed. Enterprise systems require deterministic inputs. This is built for integration, not demonstration.
+**Planning loop.**
+Confidence below 0.70 triggers a re-run. Minimal self-correction — but enough to matter at scale.
+
+**Constrained action space.**
+Five defined actions, not free text. Predictable outputs that integrate into downstream workflows.
+
+**Structured JSON throughout.**
+Every agent interface is typed and parsed. Built for integration, not demonstration.
 
 ---
 
 ## Run Locally
+
 ```bash
 git clone https://github.com/rajang-data/enterprise-ai-platform
 cd enterprise-ai-platform
@@ -83,3 +93,4 @@ streamlit run app.py
 | Orchestration | Python |
 | Interface | Streamlit |
 | External Platforms | None required |
+
