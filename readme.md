@@ -34,11 +34,15 @@ AgentForce solves this inside Salesforce. **This solves it from scratch.**
 
 ## Two Layers. One System.
 
-**Governance Layer** (Centralized) — Policy Engine, Audit Logger, Guardrail
+**Governance Layer** (Centralized)**
+Policy Engine, Audit Logger, Guardrail
 
-**Intelligence Layer** (Edge) — NBA Agent, Evaluation Agent, Supervisor
+**Intelligence Layer** (Edge)**
+NBA Agent, Evaluation Agent, Supervisor
 
-The governance layer defines what AI can decide autonomously and what requires a human. The intelligence layer executes within those boundaries. This mirrors how enterprise AI operating models actually need to work.
+The governance layer defines what AI can decide autonomously and what requires a human. The intelligence layer executes within those boundaries. 
+
+This mirrors how enterprise AI operating models actually need to work.
 
 ---
 
@@ -57,21 +61,27 @@ Every decision logged: timestamp, model, confidence, reasoning, policy outcome.
 ## Why It's Built This Way
 
 **No third-party agent platforms.**
+
 Built directly on Claude API because enterprise clients don't always have Salesforce or AgentForce. This works on any CRM, any data source, from scratch.
 
 **Centralized governance. Decentralized execution.**
+
 The governance layer (policy, audit, guardrail) runs centrally. The NBA agent runs at the edge. This is the operating model enterprise AI actually needs, not just the model that's easiest to demo.
 
 **Human-in-the-loop by policy, not by accident.**
+
 Churn risk flags always route to human review. Low-confidence decisions route to human review. The system decides what it can decide. It escalates what it cannot.
 
 **Planning loop.**
+
 Confidence below 0.70 triggers a re-run. Minimal self-correction but enough to matter at scale.
 
 **Constrained action space.**
+
 Five defined actions, not free text. Predictable outputs that integrate into downstream workflows.
 
 **Structured JSON throughout.**
+
 Every agent interface is typed and parsed. Built for integration, not demonstration.
 
 ---
